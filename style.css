@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1020;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #292d43;
+}
+
+.logo {
+    color: #9d8cff;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #dddaf3;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a99aff;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: radial-gradient(
+        circle at top,
+        #30265e,
+        #0d1020 65%
+    );
+}
+
+.tag {
+    color: #b7aaff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #a99aff;
+}
+
+.description {
+    max-width: 480px;
+    color: #c4c5d6;
+    margin-bottom: 28px;
+}
+
+button {
+    background: #9d8cff;
+    color: #17132d;
+    border: none;
+    border-radius: 9px;
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c0b6ff;
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 18px;
+    color: #c8beff;
+}
+
+.about {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.about h2 {
+    margin-bottom: 12px;
+}
+
+.about p {
+    color: #c4c5d6;
+    max-width: 500px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #a7a8bd;
+    border-top: 1px solid #292d43;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
